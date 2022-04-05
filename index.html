@@ -25,13 +25,20 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
     <link href="/css/site.css" rel="stylesheet">
+    <link href="/css/hoverCard.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navColor" id="mainNav">
         <div class="container-xxl">
             <a class="navbar-brand" href="#">
                 <img src="/img/BSWhiteMark.png" height="50">
@@ -74,10 +81,11 @@
             <div class="mainHeader-content h-100 w-100 d-flex justify-content-start align-items-center">
                 <div class="mainHeader-wrapper">
                     <!-- more content will go in here -->
-                    <div class="mainTitle">BRANDON<span><img src="/img/BSDarkMark.png" class="mainLogo"></span>
+                    <div class="text-center"><img src="/img/BSDarkMark.png" class="mainLogo"></div>
+                    <div class="mainTitle">BRANDON
                     </div>
                     <div class="mainTitle">SMELTZER</div>
-                    <div class="subTitle">WEB DEVELOPER</div>
+                    <div class="subTitle mt-2">WEB DEVELOPER</div>
                     <a class="btn btn-primary mt-3" href="contact">CONTACT ME</a>
                 </div>
             </div>
@@ -186,43 +194,155 @@
                 and database development. All these projects are full-stack
                 web projects that are published so that you can demo them
                 easily. Contact me to get a complete code walk through.
-
             </p>
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-3 gy-5">
                 <div class="col">
-                    <picture>
-                        <source srcset="/img/logos/BugTracker_600.jpg" media="(min-width:991.98px)">
-                        <img src="/img/logos/BugTrackers_200.png">
-                    </picture>
-                    <div>
-                        <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/BSBugTracker_500.png" media="(min-width:991.98px)">
+                                <img src="/img/logos/BugTracker_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#ProjectOneModal">Learn More</button>
+                            </div>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-primary">Learn More</button>
                 </div>
+
                 <div class="col">
-                    <picture>
-                        <source srcset="/img/logos/Blog_600.jpg" media="(min-width:991.98px)">
-                        <img src="/img/logos/Blog_200.png">
-                    </picture>
-                    <div>
-                        <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/Blog_600.jpg" media="(min-width:991.98px)">
+                                <img src="/img/logos/Blog_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-primary">Learn More</button>
                 </div>
+
                 <div class="col">
-                    <picture>
-                        <source srcset="/img/logos/ExpenseTracker_600.jpg" media="(min-width:991.98px)">
-                        <img src="/img/logos/ExpenseTracker_200.png">
-                    </picture>
-                    <div>
-                        <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/ExpenseTracker_600.jpg" media="(min-width:991.98px)">
+                                <img src="/img/logos/ExpenseTracker_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-primary">Learn More</button>
                 </div>
+
             </div>
         </section>
         <section id="challenges" class="section-page">
-            <h1>Small things I have built</h1>
+            <h1>Smaller things I have built</h1>
+            <p>
+                Smaller in scale compared to full-stack projects, these coding challenges demonstrate skills in
+                front-end development, javascript and UI. Challenges are one of the many aspects of coding that make
+                development so fun. These projects are also published, to see the code at its core. Feel free to contact
+                me regarding any of my work.
+            </p>
+            <div class="row row-cols-1 row-cols-md-3 gy-5">
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/LoanShark_600.png" media="(min-width:991.98px)">
+                                <img src="/img/logos/LoanShark_200.png">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/tacocat_600.png" media="(min-width:991.98px)">
+                                <img src="/img/logos/tacocat_200.png">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/Tasker_600.png" media="(min-width:991.98px)">
+                                <img src="/img/logos/Tasker_200.png">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/Superdog_600.jpg" media="(min-width:991.98px)">
+                                <img src="/img/logos/Superdog_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/fizzbuzz_600.jpg" media="(min-width:991.98px)">
+                                <img src="/img/logos/fizzbuzz_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="hc-wrapper">
+                        <div class="hc-card">
+                            <picture>
+                                <source srcset="/img/logos/Notary_600.jpg" media="(min-width:991.98px)">
+                                <img src="/img/logos/Notary_200.jpg">
+                            </picture>
+                            <div class="hc-content">
+                                <p>A Full-strack bug tracker app built with ASP.NET, MVC, C# and SQL.</p>
+                                <button type="button" class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
         <section id="blog" class="section-page">
             <h1>Stuff I write about</h1>
@@ -232,6 +352,100 @@
         </section>
     </main>
     <footer></footer>
+
+    <!-- Project Modals -->
+    <div class="modal fade" id="ProjectOneModal" tabindex="-1" aria-labelledby="ProjectOneModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal title" id="ProjectOneModalLabel">Bugtracker</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <div id="carouselProjectOne" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselProjectOne" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselProjectOne" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselProjectOne" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselProjectOne" data-bs-slide-to="3"
+                                            aria-label="Slide 4"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/logos/BSBugTracker_500.png" class="d-block w-100" alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/BugTrackerScreen1.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/BugTrackerScreen2.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/img/screenshots/BugTrackerScreen3.jpg" class="d-block w-100"
+                                                alt="...">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProjectOne" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProjectOne" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <!-- Project Description goes here -->
+                                <h3>Bugtracker</h3>
+                                <p>
+                                    Insecticide is a software defect tracking system.
+                                    Commonly known as a bug tracker. Insecticide is built
+                                    with ASP.NET, MVC, C# and SQL. A role based security
+                                    system was implemented to create permission based roles.
+                                    The roles of Admin , Project Manager, Developer and
+                                    Submitter restrict what the user can see and do. The
+                                    software allows for users to submit tickets and those
+                                    tickets are tracked through status from Open to
+                                    Complete.
+                                </p>
+                                <p>
+                                    The system was built with C# and .Net in 3 weeks. The
+                                    front end was developed with HTML, Javascript and
+                                    Bootstrap. The back-end utlizies MVC and C#. The database
+                                    was built with SQL Server and hosted on Azure. Please
+                                    visit the site and try it out.
+                                </p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <h4>PROJECT TYPE:</h4>Web Application
+                                    </li>
+                                    <li class="list-group-item">
+                                        <h4>TECHNOLOGIES</h4> C#, SQL, ASP.NET MVC, JS, CSS, Bootstrap, HTML5
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Visit Site</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
