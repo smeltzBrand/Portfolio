@@ -1,0 +1,184 @@
+:root{
+
+/* fonts */
+--cf-title-font: 'Bebas Neue', sans-serif;
+--cf-subtitle-font: 'Fira Sans', sans-serif;
+--cf-heading-font: 'Bebas Neue', sans-serif;
+--cf-body-font: 'Roboto', sans-serif;
+
+    /* theme colors */
+    --cf-primary-color: rgb(145,203,251);
+    --cf-secondary-color: rgb(66,147,186);
+    --cf-highlight-color: rgb(250,225,120);
+    --cf-dark-color: rgb(33,33,33);
+    --cf-light-color: rgb(222,238,251);
+    --cf-background-color: rgba(250,250,250,.8);
+
+    --cf-font-size: 1.2rem;
+    --cf-font-weight: 400;
+    --cf-line-height: 1.5rem;
+    --cf-title-color: var(--cf-dark-color);
+}
+
+/* --- Element Overrides */
+h6,.h6,h5,.h5,h4,.h4,h3,.h3,h2,.h2,h1,.h1{
+    font-family: var(--cf-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:.1rem;
+    color: var(--cf-title-color);
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    font-family: var(--cf-body-font);
+    font-size: var(--cf-font-size);
+    font-weight: var(--cf-font-weight);
+    line-height: var(--cf-line-height);
+    color: var(--cf-dark-color);
+    background-color: var(--cf-background-color);
+    --webkit-text-size-adjust: 100%;
+}
+
+header{
+     /* imageheight + 14px */
+    padding-top: 74px;
+}
+
+section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-page{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even){
+    background-color: var(--cf-light-color);
+}
+
+.section-page:nth-child(odd){
+    background-color: var(--cf-primary-color);
+}
+
+.profilePic{
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+.devIcons{
+    font-size: 4rem;
+}
+
+.mainHeader{
+    background-image: url("/img/DevPortFolioBG_576.png");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--cf-light-color);
+}
+
+.mainHeader-wrapper{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.mainTitle{
+    font-family: var(--cf-title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+    color: var(--cf-dark-color);
+}
+
+.mainLogo{
+    height: .6em
+}
+
+.subTitle{
+    font-family: var(--cf-subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    letter-spacing: .09rem;
+    color: var(--cf-dark-color);
+}
+
+/* make main section take all available space */
+main{
+    flex: 1 0 auto;
+}
+
+/* sticky footer */
+footer{
+    flex-shrink: 0
+}
+
+/* break points */
+@media (min-width: 575.98px){
+    .mainHeader{
+        background-image: url("/img/DevPortFolioBG_767.png");
+        height: 200px;
+    }
+}
+
+@media (min-width: 767.98px){
+    .mainHeader{
+        background-image: url("/img/DevPortFolioBG_992.png");
+        height: 300px;
+    }
+
+    .mainTitle{
+        font-size: 4.5rem;
+        line-height: 3.5rem;
+    }
+
+    .subTitle{
+        font-size: 1.2rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
+
+@media (min-width: 991.98px){
+    .mainHeader{
+        background-image: url("/img/DevPortFolioBG_1200.png");
+        height: 400px;
+    }
+}
+
+@media (min-width: 1199.98px){
+    .mainHeader{
+        background-image: url("/img/DevPortFolioBG_2560.png");
+        height: 500px;
+    }
+
+    .mainTitle{
+        font-size: 6rem;
+        line-height: 5rem;
+    }
+
+    .subTitle{
+        font-size: 1.7rem;
+        line-height: 1rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+}
+
+@media (min-width: 1399.98px){
+    .mainHeader{
+        background-image: url("/img/DevPortFolioBG_2560.png");
+        height: 500px;
+    }
+}
