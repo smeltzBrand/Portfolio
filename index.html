@@ -25,11 +25,6 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="/css/site.css" rel="stylesheet">
@@ -48,7 +43,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon-cf">
+                    <i class="bi bi-list"></i>
+                </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -367,7 +364,8 @@
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h5 class="card-title">MAKE SQL QUERIES FLY</h5>
                                 <p class="card-text">We apply the proverb 'Look before you leap' not only to our content
-                                    but our power to repurpose. A company that can synthesize courageously will (eventually)
+                                    but our power to repurpose. A company that can synthesize courageously will
+                                    (eventually)
                                     be able to transition easily. Imagine a combination of HTTP and AJAX. We will
                                     revalue our aptitude to empower without depreciating our capability to implement
                                     wirelessly leads to the capacity to synthesize interactively. Without niches,
@@ -397,7 +395,8 @@
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h5 class="card-title">THE POWER OF CSS</h5>
                                 <p class="card-text">We apply the proverb 'Look before you leap' not only to our content
-                                    but our power to repurpose. A company that can synthesize courageously will (eventually)
+                                    but our power to repurpose. A company that can synthesize courageously will
+                                    (eventually)
                                     be able to transition easily. Imagine a combination of HTTP and AJAX. We will
                                     revalue our aptitude to empower without depreciating our capability to implement
                                     wirelessly leads to the capacity to synthesize interactively. Without niches,
@@ -415,9 +414,85 @@
         </section>
         <section id="contact" class="section-page">
             <h1>Let's Chat</h1>
+            <form>
+                <div class="row mb-1">
+                    <div class="col-12 col-md-6 mt-1">
+                        <label class="form-label">First Name</label>
+                        <input type="text" name="firstName" class="form-control" placeholder="First name"
+                            aria-label="First name" required>
+                    </div>
+                    <div class="col-12 col-md-6 mt-1">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" name="lastName" class="form-control" placeholder="Last name"
+                            aria-label="Last name" required>
+                    </div>
+                    <div class="col-12 col-md-6 mt-1">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" placeholder="Email" aria-label="Email"
+                            required>
+                    </div>
+                    <div class="col-12 col-md-6 mt-1">
+                        <label class="form-label">Phone (optional)</label>
+                        <input type="text" name="phone" class="form-control" placeholder="Phone" aria-label="Phone">
+                    </div>
+                    <div class="col-12 mt-1">
+                        <label class="form-label">Subject</label>
+                        <input type="text" name="Subject" class="form-control" placeholder="Subject" aria-label="Phone">
+
+                        <div class="row mb-1 mt-1">
+                            <div class="col">
+                                <label class="form-label">Message</label>
+                                <textarea type="text" rows="8" name="message" class="form-control" placeholder="Message"
+                                    aria-label="Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="text-start">
+                            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        </div>
+            </form>
         </section>
     </main>
-    <footer></footer>
+    <footer class="container-fluid mt-5">
+        <div class="row footer-bg-cta">
+            <div class="col">
+                <div class="container footer-cta py-2">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h1>Let's Work Together</h1>
+                            <h4>Have a project? I'm open to new opportunities and ready to work!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-main py-3">
+            <div class="col">
+                <div class="container">
+                    <div class="row align-items-center gy-2">
+                        <div
+                            class="col d-flex justify-content-center justify-content-md-start order-last order-md-first">
+                            &copy; 2022 Brandon Smeltzer
+                        </div>
+                        <div class="col d-flex justify-content-center">
+                            <img src="/img/BSWhiteMark.png" height="50">
+                        </div>
+                        <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
+                            <a href="#" class="socialicons">
+                                <i class="bi bi-linkedin p-2"></i>
+                            </a>
+                            <a href="#" class="socialicons">
+                                <i class="bi bi-twitter p-2"></i>
+                            </a>
+                            <a href="#" class="socialicons">
+                                <i class="bi bi-github p-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- Project Modals -->
     <div class="modal fade" id="ProjectOneModal" tabindex="-1" aria-labelledby="ProjectOneModalLabel"
