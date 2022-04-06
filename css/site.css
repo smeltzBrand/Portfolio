@@ -1,19 +1,19 @@
 :root{
 
 /* fonts */
---cf-title-font: 'Montserrat', sans-serif;
---cf-subtitle-font: 'Josefin Sans', sans-serif;
---cf-heading-font: 'Montserrat', sans-serif;
---cf-body-font: 'Libre Franklin', sans-serif;
+--cf-title-font: 'Bebas-Neue', sans-serif;
+--cf-subtitle-font: 'Fira Sans', sans-serif;
+--cf-heading-font: 'Bebas-Neue', sans-serif;
+--cf-body-font: 'Roboto', sans-serif;
 
 
 
     /* theme colors */
-    --cf-primary-color: rgb(138, 223, 139);
+    --cf-primary-color: #ABDE78;
     --cf-secondary-color: rgb(209, 227, 209);
     --cf-highlight-color: rgb(250,225,120);
     --cf-dark-color: rgb(33,33,33);
-    --cf-light-color: rgb(209, 227, 209);
+    --cf-light-color: #D1E3BF;
     --cf-background-color: rgba(250,250,250,0.8);
 
     --cf-font-size: 1.2rem;
@@ -87,8 +87,8 @@ section{
 }
 
 .mainHeader{
-    background-image: url("/img/DevPortFolioBG_576.png");
-    height: 200px;
+    background-image: url("/img/BSBannerKeyboard576.png");
+    height: 250px;
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--cf-light-color);
@@ -107,7 +107,7 @@ section{
 }
 
 .mainLogo{
-    height: 2rem
+    height: 3em
 }
 
 .subTitle{
