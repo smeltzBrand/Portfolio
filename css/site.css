@@ -218,6 +218,9 @@ footer {
     border-radius: 15px;
     background-color: var(--cf-secondary-color);
     width: 76%;
+}
+
+.footerWhiteText {
     color: white;
 }
 
