@@ -187,8 +187,11 @@ section {
     font-family: var(--cf-title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--cf-dark-color);
-    text-shadow: 2px 2px white;
+    color: var(--cf-dark-color); */
+    /* text-shadow: 2px 2px white;
+    /* -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
 }
 
 .mainLogo {
@@ -280,8 +283,9 @@ a.socialicons:hover {
 
 @media (min-width: 1199.98px) {
     .mainHeader {
-        background-image: url("/img/BSPortHeader2560_1.png");
+        background-image: url("/img/LightWoodBanner_2560.png");
         height: 500px;
+        background-size: cover;
     }
 
     .mainTitle {
@@ -300,7 +304,8 @@ a.socialicons:hover {
 
 @media (min-width: 1399.98px) {
     .mainHeader {
-        background-image: url("/img/BSPortHeader2560_3.png");
+        background-image: url("/img/LightWoodBanner_2560.png");
         height: 500px;
+        background-size: cover;
     }
 }
