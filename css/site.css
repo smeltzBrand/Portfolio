@@ -171,8 +171,8 @@ section {
 }
 
 .mainHeader {
-    background-image: url("/img/BSBannerKeyboard576.png");
-    height: 250px;
+    background-image: url("/img/TempBanner.png");
+    height: 200px;
     background-repeat: no-repeat;
     background-position: right top;
     background-color: var(--cf-light-color);
@@ -249,14 +249,14 @@ a.socialicons:hover {
 /* Media Queries break points */
 @media (min-width: 575.98px) {
     .mainHeader {
-        background-image: url("/img/DevPortFolioBG_767.png");
+        background-image: url("/img/LightWoodBanner_767.png");
         height: 200px;
     }
 }
 
 @media (min-width: 767.98px) {
     .mainHeader {
-        background-image: url("/img/DevPortFolioBG_992.png");
+        background-image: url("/img/LightWoodBanner_992.png");
         height: 300px;
     }
 
@@ -276,7 +276,7 @@ a.socialicons:hover {
 
 @media (min-width: 991.98px) {
     .mainHeader {
-        background-image: url("/img/DevPortFolioBG_1200.png");
+        background-image: url("/img/LightWoodBanner_1200.png");
         height: 400px;
     }
 }
