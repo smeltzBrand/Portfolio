@@ -195,7 +195,8 @@ section {
 }
 
 .mainLogo {
-    height: 3em
+    height: 2em;
+    margin-bottom: 0.2rem;
 }
 
 .subTitle {
@@ -272,12 +273,20 @@ a.socialicons:hover {
         font-weight: 300;
         letter-spacing: .1rem;
     }
+
+    .mainLogo {
+        height: 3em;
+    }
 }
 
 @media (min-width: 991.98px) {
     .mainHeader {
         background-image: url("/img/LightWoodBanner_1200.png");
         height: 400px;
+    }
+
+    .mainLogo {
+        height: 4em;
     }
 }
 
