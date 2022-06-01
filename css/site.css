@@ -50,17 +50,17 @@ h1,
 }
 
 
-#mainNav button{
+#mainNav button {
     border-color: var(--cf-highlight-color);
 }
 
 /* Bootstrap Overrides */
 
-.navbar-toggler{
+.navbar-toggler {
     color: var(--cf-nav-toggler-glow) !important;
 }
 
-.navbar-toggler-icon-cf{
+.navbar-toggler-icon-cf {
     color: var(--cf-nav-toggler-color);
     font-size: 1.5rem;
     display: inline-block;
@@ -120,7 +120,7 @@ body {
 }
 
 .navColor {
-    background-color: rgb(58, 94, 59)
+    background-color: rgb(58, 94, 59) !important;
 }
 
 body {
@@ -187,7 +187,7 @@ section {
     font-family: var(--cf-title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--cf-dark-color); */
+    color: var(--cf-dark-color);
     /* text-shadow: 2px 2px white;
     /* -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
