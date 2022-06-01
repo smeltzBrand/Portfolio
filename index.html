@@ -359,7 +359,7 @@
                 <article class="card mb-4 blog-article">
                     <div id="blog1" class="row g-0 blog-row">
                         <div class="col-md-4 blog-header">
-                            <a class="blog-image-link" href="#">
+                            <a class="blog-image-link a-link" href="">
                                 <img id="image1" src="" class="blog-image" alt="Flying Girl">
                             </a>
                             <div class="blog-date">
@@ -381,7 +381,7 @@
                                     page of the customer journey.
                                 </p>
                                 <div class="text-start">
-                                    <a class="btn btn-primary btn-sm" href="#">Read More</a>
+                                    <a class="btn btn-primary btn-sm b-link" href="">Read More</a>
                                 </div>
                                 <p class="card-text"><small class="text-muted w-more">Last updated 3 mins ago</small>
                                 </p>
@@ -392,8 +392,8 @@
                 <article class="card mb-4 blog-article">
                     <div id="blog2" class="row g-0 blog-row">
                         <div class="col-md-4 blog-header">
-                            <a class="blog-image-link" href="#">
-                                <img src="/img/blog/Blog_CodeTag.jpg" class="blog-image" alt="Code Tag">
+                            <a class="blog-image-link a-link" href="">
+                                <img src="/img/blog/Blog_CodeTag.jpg" class="blog-image" id="image2" alt="Code Tag">
                             </a>
                             <div class="blog-date">
                                 <div class="blog-day">12</div>
@@ -403,7 +403,8 @@
                         <div class="col-md-8">
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h5 class="card-title w-title">THE POWER OF CSS</h5>
-                                <p class="card-text">We apply the proverb 'Look before you leap' not only to our content
+                                <p class="card-text w-abstract">We apply the proverb 'Look before you leap' not only to
+                                    our content
                                     but our power to repurpose. A company that can synthesize courageously will
                                     (eventually)
                                     be able to transition easily. Imagine a combination of HTTP and AJAX. We will
@@ -413,7 +414,7 @@
                                     page of the customer journey.
                                 </p>
                                 <div class="text-start">
-                                    <a class="btn btn-primary btn-sm" href="#">Read More</a>
+                                    <a class="btn btn-primary btn-sm b-link" href="">Read More</a>
                                 </div>
                                 <p class="card-text"><small class="text-muted w-more">Last updated 3 mins ago</small>
                                 </p>
@@ -424,8 +425,8 @@
                 <article class="card mb-4 blog-article">
                     <div id="blog3" class="row g-0 blog-row">
                         <div class="col-md-4 blog-header">
-                            <a class="blog-image-link" href="#">
-                                <img src="/img/blog/Blog_CodeTag.jpg" class="blog-image" alt="Code Tag">
+                            <a class="blog-image-link a-link" href="">
+                                <img src="/img/blog/Blog_CodeTag.jpg" class="blog-image" id="image3" alt="Code Tag">
                             </a>
                             <div class="blog-date">
                                 <div class="blog-day">12</div>
@@ -435,7 +436,8 @@
                         <div class="col-md-8">
                             <div class="card-body h-100 d-flex flex-column justify-content-around">
                                 <h5 class="card-title w-title">THE POWER OF CSS</h5>
-                                <p class="card-text">We apply the proverb 'Look before you leap' not only to our content
+                                <p class="card-text w-abstract">We apply the proverb 'Look before you leap' not only to
+                                    our content
                                     but our power to repurpose. A company that can synthesize courageously will
                                     (eventually)
                                     be able to transition easily. Imagine a combination of HTTP and AJAX. We will
@@ -445,7 +447,7 @@
                                     page of the customer journey.
                                 </p>
                                 <div class="text-start">
-                                    <a class="btn btn-primary btn-sm" href="#">Read More</a>
+                                    <a class="btn btn-primary btn-sm b-link" href="">Read More</a>
                                 </div>
                                 <p class="card-text"><small class="text-muted w-more">Last updated 3 mins ago</small>
                                 </p>
@@ -700,28 +702,72 @@
                 footer1.innerHTML =
                     `Author: Brandon Smeltzer /Created: ${new Date(data[0].created).toLocaleDateString("en-US", options)}`;
 
+                let add1a = document.querySelector("#blog1 a.a-link");
+                add1a.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[0].slug}`);
+
+                let add1b = document.querySelector("#blog1 a.b-link");
+                add1b.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[0].slug}`);
+
                 let blogDay1 = document.querySelector("#blog1 div.blog-day");
                 blogDay1.innerHTML = created.split(" ")[1];
                 let blogMonth1 = document.querySelector("#blog1 div.blog-month");
                 blogMonth1.innerHTML = created.split(" ")[0];
 
+                let image1 = document.getElementById("image1"); //This is the <img> tag
+                image1.setAttribute("src", `data:${data[0].imageType};base64,${data[0].imageData}`);
+
+                let created2 = new Date(data[1].created).toLocaleDateString("en-US", options);
+
                 let title2 = document.querySelector("#blog2 h5.w-title");
                 title2.innerHTML = data[1].title;
+
+                let abstract2 = document.querySelector("#blog2 p.w-abstract");
+                abstract2.innerHTML = data[1].abstract;
 
                 let footer2 = document.querySelector("#blog2 small.w-more");
                 footer2.innerHTML =
                     `Author: Brandon Smeltzer /Created: ${new Date(data[1].created).toLocaleDateString("en-US", options)}`;
 
+                let add2a = document.querySelector("#blog2 a.a-link");
+                add2a.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[1].slug}`);
+
+                let add2b = document.querySelector("#blog2 a.b-link");
+                add2b.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[1].slug}`);
+
+                let blogDay2 = document.querySelector("#blog1 div.blog-day");
+                blogDay2.innerHTML = created.split(" ")[1];
+                let blogMonth2 = document.querySelector("#blog1 div.blog-month");
+                blogMonth2.innerHTML = created.split(" ")[0];
+
+                let image2 = document.getElementById("image2"); //This is the <img> tag
+                image2.setAttribute("src", `data:${data[1].imageType};base64,${data[1].imageData}`);
+
+                let created3 = new Date(data[2].created).toLocaleDateString("en-US", options);
 
                 let title3 = document.querySelector("#blog3 h5.w-title");
                 title3.innerHTML = data[2].title;
+
+                let abstract3 = document.querySelector("#blog3 p.w-abstract");
+                abstract3.innerHTML = data[2].abstract;
 
                 let footer3 = document.querySelector("#blog3 small.w-more");
                 footer3.innerHTML =
                     `Author: Brandon Smeltzer /Created: ${new Date(data[2].created).toLocaleDateString("en-US", options)}`;
 
-                let image1 = document.getElementById("image1"); //This is the <img> tag
-                image1.setAttribute("src", `data:${data[0].imageType};base64,${data[0].imageData}`);
+                let add3a = document.querySelector("#blog3 a.a-link");
+                add3a.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[2].slug}`);
+
+                let add3b = document.querySelector("#blog3 a.b-link");
+                add3b.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[2].slug}`);
+
+                let blogDay3 = document.querySelector("#blog3 div.blog-day");
+                blogDay3.innerHTML = created.split(" ")[1];
+                let blogMonth3 = document.querySelector("#blog3 div.blog-month");
+                blogMonth3.innerHTML = created.split(" ")[0];
+
+                let image3 = document.getElementById("image3"); //This is the <img> tag
+                image3.setAttribute("src", `data:${data[2].imageType};base64,${data[2].imageData}`)
+
 
 
             });
