@@ -744,10 +744,10 @@
                 let add2b = document.querySelector("#blog2 a.b-link");
                 add2b.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[1].slug}`);
 
-                let blogDay2 = document.querySelector("#blog1 div.blog-day");
-                blogDay2.innerHTML = created.split(" ")[1];
-                let blogMonth2 = document.querySelector("#blog1 div.blog-month");
-                blogMonth2.innerHTML = created.split(" ")[0];
+                let blogDay2 = document.querySelector("#blog2 div.blog-day");
+                blogDay2.innerHTML = created2.split(" ")[1];
+                let blogMonth2 = document.querySelector("#blog2 div.blog-month");
+                blogMonth2.innerHTML = created2.split(" ")[0];
 
                 let image2 = document.getElementById("image2"); //This is the <img> tag
                 image2.setAttribute("src", `data:${data[1].imageType};base64,${data[1].imageData}`);
@@ -771,9 +771,9 @@
                 add3b.setAttribute("href", `//blog-scope.herokuapp.com/PostDetails/${data[2].slug}`);
 
                 let blogDay3 = document.querySelector("#blog3 div.blog-day");
-                blogDay3.innerHTML = created.split(" ")[1];
+                blogDay3.innerHTML = created3.split(" ")[1];
                 let blogMonth3 = document.querySelector("#blog3 div.blog-month");
-                blogMonth3.innerHTML = created.split(" ")[0];
+                blogMonth3.innerHTML = created3.split(" ")[0];
 
                 let image3 = document.getElementById("image3"); //This is the <img> tag
                 image3.setAttribute("src", `data:${data[2].imageType};base64,${data[2].imageData}`)
